@@ -1,288 +1,418 @@
-**SignalNet**
+**# 🚀 SignalNet**  
 
-Real-Time Crisis Intelligence \& Dynamic Risk Zoning Engine
+**## Real-Time Crisis Intelligence \& Dynamic Risk Zoning Engine**
 
 
 
-SignalNet is a real-time disaster intelligence system that ingests live multi-source signals, clusters anomalies spatially, calculates severity \& confidence scores, predicts stabilization ETA, and visualizes dynamic danger zones on an interactive map.
+**SignalNet is a real-time disaster intelligence system that ingests live multi-source signals, clusters anomalies spatially, calculates severity and confidence scores, predicts stabilization ETA, and visualizes dynamic danger zones on an interactive map.**
 
 
 
-Built using:
+**---**
 
-Node.js (Backend)
 
-Redis (Event streaming \& caching)
 
-WebSockets (Real-time updates)
+**## 🛠 Built With**
 
-SQLite (Event persistence)
 
-React + Leaflet (Frontend visualization)
 
-Docker (Containerization)
+**- Node.js – Backend processing**  
 
+**- Redis – Event streaming \& caching**  
 
+**- WebSockets (Socket.io) – Real-time updates**  
 
-📌 Problem Statement
+**- SQLite – Event persistence**  
 
+**- React + Leaflet – Frontend visualization**  
 
+**- Docker – Containerization**  
 
-During disasters:
 
-Information is fragmented
 
-Signals arrive from multiple unverified sources
+**---**
 
-Decision-makers lack severity prioritization
 
-No predictive stabilization indicator exists
 
-Result → Delayed and inefficient response.
+**## 📌 Problem Statement**
 
 
 
-💡 Solution
+**During disasters:**
 
 
 
-SignalNet:
+**- Information is fragmented**  
 
+**- Signals arrive from multiple unverified sources**  
 
+**- Decision-makers lack severity prioritization**  
 
-✔ Ingests signals from social + sensor sources
+**- No predictive stabilization indicator exists**  
 
-✔ Clusters anomalies spatially
 
-✔ Calculates severity \& confidence scores
 
-✔ Tracks centroid drift (movement of danger zone)
+**\*\*Result → Delayed and inefficient response.\*\***
 
-✔ Predicts ETA to stabilization
 
-✔ Streams real-time alerts
 
-✔ Visualizes dynamic risk areas
+**---**
 
 
 
-🧠 Core Features
+**## 💡 Solution**
 
 
 
-1️⃣ Dynamic Risk Zone
+**SignalNet provides:**
 
 
 
-Red zone auto-expands for severity ≥ 7
+**- ✔ Multi-source signal ingestion (social + sensor simulation)**  
 
-Zone drifts based on centroid movement
+**- ✔ Spatial anomaly clustering**  
 
-Velocity color-coded (slow → fast)
+**- ✔ Severity and confidence scoring**  
 
+**- ✔ Dynamic centroid drift tracking (moving danger zone)**  
 
+**- ✔ ETA prediction for stabilization**  
 
-2️⃣ Confidence Scoring
+**- ✔ Real-time alert streaming**  
 
+**- ✔ Interactive geospatial visualization**  
 
 
-Based on:
 
+**---**
 
 
-Signal diversity
 
-Signal consistency
+**## 🧠 Core Features**
 
-Recency
 
-Filters false positives
 
+**### 1️⃣ Dynamic Risk Zone**
 
 
-3️⃣ ETA Prediction Engine
 
+**- Red zone auto-expands for severity ≥ 7**  
 
+**- Zone drifts based on centroid movement**  
 
-Uses signal arrival rate
+**- Movement velocity color-coded (slow → fast)**  
 
-Severity trend slope
 
-5-minute growth delta
 
-Predicts minutes until stabilization
+**---**
 
 
 
-4️⃣ Real-Time Alerts
+**### 2️⃣ Confidence Scoring Engine**
 
 
 
-WebSocket-based streaming
+**Based on:**
 
-Critical alerts auto-highlighted
 
-Events resolvable from dashboard
 
+**- Signal diversity**  
 
+**- Signal consistency**  
 
-5️⃣ Simulation Engine
+**- Recency weighting**  
 
 
 
-Flood scenario generator
+**Filters false positives and reduces noise.**
 
-Movement drift triggers
 
-Confidence test triggers
 
-Database validation scripts
+**---**
 
 
 
-🏗 Architecture
+**### 3️⃣ ETA Prediction Engine**
 
 
 
-<p align="center">
+**Uses:**
 
-&nbsp; <img src="assets/architecture.png" width="800">
 
-</p>
 
+**- Signal arrival rate**  
 
+**- Severity trend slope**  
 
-Flow:
+**- 5-minute growth delta**  
 
 
 
-Signal Sources
+**Predicts estimated minutes until system stabilization.**
 
-→ Backend Ingestion
 
-→ Clustering Engine
 
-→ Severity + Confidence Model
+**Displayed as:**
 
-→ ETA Predictor
 
-→ Redis
 
-→ WebSocket Broadcast
+    **Estimated Stabilization: X minutes**
 
-→ Frontend Dashboard
 
 
+**---**
 
-📂 Project Structure
 
-backend/
 
-&nbsp; engine/
+**### 4️⃣ Real-Time Alerts**
 
-&nbsp; node\_modules/
 
-&nbsp; routes/
 
-&nbsp; tests/
+**- WebSocket-based live streaming**  
 
-&nbsp; scripts/
+**- Critical alerts auto-highlighted**  
 
-frontend/
+**- Dashboard event resolution system**  
 
-&nbsp; node\_modules/
 
-&nbsp; dist/
 
-&nbsp; src/
+**---**
 
-&nbsp; public/
 
-demo\_tests/
 
-assets/
+**### 5️⃣ Simulation \& Testing Engine**
 
 
 
-⚙️ How To Run
+**Includes structured test scripts to simulate:**
 
 
 
-**Backend**
+**- Flood scenarios**  
 
-cd backend
+**- Movement drift triggers**  
 
-npm install
+**- Confidence threshold triggers**  
 
-node server.js
+**- Database validation checks**  
 
 
 
-**Frontend**
+**---**
 
-cd frontend
 
-npm install
 
-npm run dev
+**## 🏗 Architecture**
 
 
 
-Redis (Docker)
+**<p align="center">**
 
-docker run -d --name redis -p 6379:6379 redis
+  **<img src="assets/architecture.png" width="850">**
 
+**</p>**
 
 
-🎯 Future Improvements
 
+**### System Flow**
 
 
-Offline mesh-based emergency mode
 
-ML-based anomaly scoring
+**Signal Sources**  
 
-Multi-city scalability
+**→ Backend Ingestion**  
 
-SMS / Automated leaflet dispatch
+**→ Clustering Engine**  
 
-Government API integration
+**→ Severity \& Confidence Model**  
 
+**→ ETA Predictor**  
 
+**→ Redis Layer**  
 
-💼 Portfolio Context
+**→ WebSocket Broadcast**  
 
+**→ Frontend Dashboard**  
 
 
-This project demonstrates:
 
+**---**
 
 
-Distributed system design
 
-Real-time event streaming
+**## 📂 Project Structure**
 
-Spatial clustering logic
 
-Risk modeling
 
-Cloud-ready architecture
+    **SignalNet/**
 
-Production-level structuring
+    **│**
 
+    **├── backend/**
 
+    **│   ├── engine/**
 
-📸 Screenshots
+    **│   ├── routes/**
 
+    **│   ├── tests/**
 
+    **│   ├── scripts/**
 
-(dashboard images here)
+    **│   ├── db.js**
 
+    **│   ├── schema.sql**
 
+    **│   └── server.js**
 
-📜 License
+    **│**
 
+    **├── frontend/**
 
+    **│   ├── src/**
 
-MIT
+    **│   ├── public/**
+
+    **│   └── vite.config.js**
+
+    **│**
+
+    **├── assets/**
+
+    **├── README.md**
+
+    **└── .gitignore**
+
+
+
+**Note: node\_modules/ and dist/ are intentionally excluded from version control.**
+
+
+
+**---**
+
+
+
+**## ⚙️ How To Run**
+
+
+
+**### 1️⃣ Start Redis (Docker)**
+
+
+
+    **docker run -d --name redis -p 6379:6379 redis**
+
+
+
+**### 2️⃣ Run Backend**
+
+
+
+    **cd backend**
+
+    **npm install**
+
+    **node server.js**
+
+
+
+**Backend runs at:**
+
+
+
+    **http://localhost:3000**
+
+
+
+**### 3️⃣ Run Frontend**
+
+
+
+    **cd frontend**
+
+    **npm install**
+
+    **npm run dev**
+
+
+
+**Frontend runs at:**
+
+
+
+    **http://localhost:5173**
+
+
+
+**---**
+
+
+
+**## 📸 Screenshots**
+
+
+
+**(Add dashboard images inside the `assets/` folder and reference them like below)**
+
+
+
+    **!\[Dashboard](assets/dashboard.png)**
+
+
+
+**---**
+
+
+
+**## 🎯 Future Improvements**
+
+
+
+**- Offline mesh-based emergency mode**  
+
+**- ML-based anomaly scoring**  
+
+**- Multi-city scalability**  
+
+**- SMS / Automated leaflet dispatch**  
+
+**- Government API integration**  
+
+
+
+**---**
+
+
+
+**## 💼 Portfolio Context**
+
+
+
+**This project demonstrates:**
+
+
+
+**- Distributed system design**  
+
+**- Real-time event streaming architecture**  
+
+**- Spatial clustering logic**  
+
+**- Risk modeling and prediction**  
+
+**- Cloud-ready infrastructure thinking**  
+
+**- Production-grade project structuring**  
+
+
+
+**---**
+
+
+
+**## 📜 License**
+
+
+
+**MIT License**
 
