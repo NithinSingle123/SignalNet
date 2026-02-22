@@ -1,0 +1,19 @@
+[
+  { "name": "Apollo Hospitals Jubilee Hills", "type": "hospital", "lat": 17.4165, "lon": 78.4111 },
+  { "name": "Yashoda Hospital Malakpet", "type": "hospital", "lat": 17.3768, "lon": 78.4907 },
+  { "name": "Care Hospitals Nampally", "type": "hospital", "lat": 17.3916, "lon": 78.4674 },
+  { "name": "Continental Hospitals Gachibowli", "type": "hospital", "lat": 17.4204, "lon": 78.3496 },
+  { "name": "AIG Hospitals Gachibowli", "type": "hospital", "lat": 17.4439, "lon": 78.3653 },
+  { "name": "MaxCure Hospitals Madhapur", "type": "hospital", "lat": 17.4483, "lon": 78.3912 },
+  { "name": "Banjara Hills Police Station", "type": "police", "lat": 17.4150, "lon": 78.4410 },
+  { "name": "Punjagutta Police Station", "type": "police", "lat": 17.4248, "lon": 78.4518 },
+  { "name": "Madhapur Police Station", "type": "police", "lat": 17.4429, "lon": 78.3897 },
+  { "name": "Gachibowli Police Station", "type": "police", "lat": 17.4227, "lon": 78.3458 },
+  { "name": "Jubilee Hills Police Station", "type": "police", "lat": 17.4300, "lon": 78.4010 },
+  { "name": "Nampally Police Station", "type": "police", "lat": 17.3920, "lon": 78.4680 },
+  { "name": "Disaster Response Unit A", "type": "unit", "lat": 17.3850, "lon": 78.4867 },
+  { "name": "Disaster Response Unit B", "type": "unit", "lat": 17.4400, "lon": 78.3700 },
+  { "name": "Disaster Response Unit C", "type": "unit", "lat": 17.4100, "lon": 78.4200 },
+  { "name": "Fire Station Musheerabad", "type": "unit", "lat": 17.4130, "lon": 78.4930 },
+  { "name": "Fire Station Madhapur", "type": "unit", "lat": 17.4520, "lon": 78.3980 }
+]
