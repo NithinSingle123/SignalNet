@@ -144,7 +144,11 @@ Database validation scripts
 
 
 
-!\[SignalNet Dashboard](assets/architecture.png)
+<p align="center">
+
+&nbsp; <img src="assets/architecture.png" width="800">
+
+</p>
 
 
 
